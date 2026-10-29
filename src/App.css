@@ -1,1 +1,183 @@
 /* Paste your Assignment 1 styles.css here. Keep the icons in src/assets/ so url(assets/...) paths keep working. */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #000000;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background: #dc4c3e;
+  color: #ffffff;
+}
+
+
+
+.counter {
+  margin-left: auto;
+}
+
+.container {
+  display: flex;
+}
+
+
+nav {
+  width: 300px;
+  background: #fefbf2;
+  color: #000000;
+  padding: 16px;
+}
+
+main {
+  flex: 1;
+  padding: 24px 40px;
+}
+
+
+@media (max-width: 480px) {
+  nav {
+    display: none;
+  }
+}
+
+
+nav li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+}
+
+.count {
+  color: #7e7d79;
+  font-size: 12px;
+}
+
+
+h1 {
+  font-size: 20px;
+}
+
+
+.task-list input {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #7e7d79;
+  border-radius: 50%;
+}
+
+.task-list input:checked {
+  background: #7e7d79;
+}
+
+
+.task-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.filters button {
+  background: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  color: #000000;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.filters button:hover {
+  background: #f0f0f0;
+}
+
+.filters button.active {
+  color: #dc4c3e;
+  font-weight: bold;
+}
+
+.task-list li.completed span {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+
+.delete-btn {
+  margin-left: auto;
+  background: none;
+  border: 1px solid #dc4c3e;
+  color: #dc4c3e;
+  border-radius: 4px;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #dc4c3e;
+  color: #ffffff;
+}
+
+.delete-btn:active {
+  transform: scale(0.95);
+}
+
+.task-list input {
+  cursor: pointer;
+}
+
+
+
+main form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+main form input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+}
+
+main form button {
+  background: #dc4c3e;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+main form button:hover {
+  background: #c43d30;
+}
